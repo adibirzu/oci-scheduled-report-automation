@@ -4,6 +4,8 @@
 
 The OCI Report Automation system is a serverless, event-driven solution that automatically processes and emails OCI usage reports when they are uploaded to Object Storage. The system uses OCI Functions, Resource Principal authentication, and integrates with multiple OCI services.
 
+This code/OCI function works with https://learnoci.cloud/how-to-create-a-cost-daily-scheduled-report-235cba2489fb , and will be used in paralel with the existing scripts. 
+
 ## Architecture Diagram
 
 ```mermaid

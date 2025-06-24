@@ -6,7 +6,10 @@
 
 A serverless, event-driven solution that automatically processes and emails OCI usage reports when they are uploaded to Object Storage. Built using OCI Functions, Resource Principal authentication, and integrated with multiple OCI services.
 
-## 🏗️ Architecture Overview
+This is not an official Oracle project, and you are fully responsable on how you use it.
+Code is provided as is, and needs changes based on your enviornment and user rights.
+
+##  Architecture Overview
 
 The system creates a complete serverless automation pipeline:
 - **Object Storage** bucket for usage reports
@@ -18,7 +21,7 @@ The system creates a complete serverless automation pipeline:
 
 ![Architecture Diagram](ARCHITECTURE.md#architecture-diagram)
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -47,12 +50,12 @@ Run the main setup script for guided configuration:
 ```
 
 The script will:
-- ✅ Check prerequisites
-- ✅ Guide you through configuration
-- ✅ Create all required OCI resources
-- ✅ Deploy the function
-- ✅ Set up IAM policies
-- ✅ Test the complete workflow
+-  Check prerequisites
+-  Guide you through configuration
+-  Create all required OCI resources
+-  Deploy the function
+-  Set up IAM policies
+-  Test the complete workflow
 
 ### 3. Manual Configuration (Alternative)
 
@@ -85,7 +88,7 @@ Then run individual setup scripts:
 ./06_test_send.sh
 ```
 
-## 📋 Setup Process
+## Setup Process
 
 The automation follows a structured setup process:
 
@@ -164,7 +167,7 @@ The following values are automatically generated during setup:
 - `POLICY_OCID` - IAM policy OCID
 - `EVENT_RULE_OCID` - Event rule OCID
 
-## 🔐 Security Features
+##  Security Features
 
 ### Resource Principal Authentication
 - **No hardcoded credentials** in function code
@@ -184,7 +187,7 @@ The following values are automatically generated during setup:
 - **Resource-specific permissions** (bucket, vault, namespace)
 - **Automatic policy validation** during setup
 
-## 📊 Monitoring and Logging
+## Monitoring and Logging
 
 ### Function Logging
 - **Comprehensive logging** enabled by default
@@ -204,7 +207,7 @@ The following values are automatically generated during setup:
 - **Performance monitoring** with execution duration
 - **Email delivery success rates**
 
-## 🔄 Local Execution Alternative
+## Local Execution Alternative
 
 For environments where you prefer local execution over serverless functions:
 
@@ -270,7 +273,7 @@ oci logging-search search-logs --search-query "search \"[function-ocid]\""
 ./load_config.sh --show
 ```
 
-## 📚 OCI Documentation Links
+##  OCI Documentation Links
 
 ### Core Services
 - **[OCI Functions](https://docs.oracle.com/en-us/iaas/Content/Functions/Concepts/functionsoverview.htm)** - Serverless compute platform
@@ -294,7 +297,7 @@ oci logging-search search-logs --search-query "search \"[function-ocid]\""
 - **[OCI Architecture Center](https://docs.oracle.com/solutions/)** - Reference architectures and best practices
 - **[OCI Free Tier](https://www.oracle.com/cloud/free/)** - Always free cloud services
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
@@ -302,17 +305,17 @@ oci logging-search search-logs --search-query "search \"[function-ocid]\""
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
+## Support
 
 - **Issues**: Report bugs and request features via [GitHub Issues](../../issues)
 - **Documentation**: Comprehensive docs in [ARCHITECTURE.md](ARCHITECTURE.md) and [CODE_LOGIC.md](CODE_LOGIC.md)
 - **OCI Support**: For OCI-specific issues, consult [OCI Documentation](https://docs.oracle.com/en-us/iaas/)
 
-## 🎯 Use Cases
+##  Use Cases
 
 ### Automated Cost Reporting
 - **Weekly/Monthly Reports**: Automatically email usage reports to stakeholders
@@ -333,4 +336,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Built with ❤️ for the OCI community**
 
-For more OCI automation examples and best practices, visit [Learn OCI](https://learnoci.cloud/).
+For more OCI  examples, ideas and best practices, visit [Learn OCI](https://learnoci.cloud/).
