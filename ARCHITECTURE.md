@@ -406,7 +406,7 @@ graph TB
     
     subgraph "Monitoring"
         METRICS[Function Metrics]
-        ALARMS[CloudWatch Alarms]
+        ALARMS[OCI Alarms]
         DASHBOARD[Monitoring Dashboard]
     end
     
