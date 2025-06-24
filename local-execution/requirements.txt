@@ -1,0 +1,19 @@
+# Requirements for OCI Report Sender Local Execution
+# Install with: pip3 install -r requirements.txt
+
+# OCI Python SDK
+oci>=2.100.0
+
+# Standard library modules (included with Python 3.8+)
+# - os
+# - sys
+# - json
+# - smtplib
+# - base64
+# - logging
+# - hashlib
+# - datetime
+# - pathlib
+# - email
+
+# Note: All other dependencies are part of Python standard library

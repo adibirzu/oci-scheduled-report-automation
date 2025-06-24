@@ -1,0 +1,19 @@
+schema_version: 20180708
+name: send-usage-report
+version: 0.1.0
+runtime: python
+build_image: fnproject/python:3.11-dev
+run_image: fnproject/python:3.11
+entrypoint: /python/bin/fdk /function/func.py handler
+memory: 512
+timeout: 120
+config:
+  BUCKET_NAME: monthly-usage-reports
+  EMAIL_FROM: sender@example.com
+  EMAIL_TO: recipient@example.com
+  NAMESPACE: your-namespace
+  REGION: your-region
+  SMTP_PASSWORD_SECRET_OCID: ocid1.vaultsecret.oc1..aaaa...
+  SMTP_PORT: "587"
+  SMTP_SERVER: smtp.email.your-region.oci.oraclecloud.com
+  SMTP_USERNAME_SECRET_OCID: ocid1.vaultsecret.oc1..aaaa...

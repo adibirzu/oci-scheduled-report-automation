@@ -1,0 +1,10 @@
+2025-06-23 10:39:58,881 - INFO - Configuration loaded successfully
+2025-06-23 10:39:58,912 - INFO - Starting OCI Report Sender
+2025-06-23 10:39:58,912 - INFO - Searching for latest report in bucket 'monthly-usage-reports'
+2025-06-23 10:39:58,957 - INFO - Latest report file: WeeklyCostsScheduledReport_20250620_0.csv.gz (created: 2025-06-21 07:19:59.070000+00:00, size: 2388 bytes)
+2025-06-23 10:39:58,957 - INFO - Downloading file: WeeklyCostsScheduledReport_20250620_0.csv.gz
+2025-06-23 10:39:58,984 - INFO - Retrieving SMTP credentials from vault
+2025-06-23 10:39:59,124 - INFO - Sending email to adibirzu@gmail.com
+2025-06-23 10:40:01,979 - INFO - Email sent successfully
+2025-06-23 10:40:01,979 - INFO - Sent files database updated
+2025-06-23 10:40:01,979 - INFO - Successfully sent report: WeeklyCostsScheduledReport_20250620_0.csv.gz
